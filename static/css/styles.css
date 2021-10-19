@@ -17,12 +17,11 @@ body .uk-heading-large,
 body .uk-heading-medium, 
 body .uk-heading-small, 
 body .uk-heading-xlarge {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #777;
     font-size: 15px;
     line-height: 27px;
@@ -57,34 +56,44 @@ ul.uk-breadcrumb>*>:hover {
 }
 
 a.uk-accordion-title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 1rem;
 }
 
-form label {
-    color: #000;
-    font-size: 14px;
-    font-weight: 600;
-}
 
 h1.h1-title {
     color:#fff;
 }
 
-a.uk-button-secondary {
+a.uk-button-secondary,
+button.uk-button-secondary {
     background: transparent;
     padding: 4px 39px;
-    color: #000;
+    color: #fff;
     display: inline-block;
     font-size: 14px;
     -webkit-transition: ease-out 0.6s;
     -moz-transition: ease-out 0.6s;
     transition: ease-out 0.6s;
     outline: none;
-    border: 1px solid #2689D6;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+    border: 1px solid white;
+}
+
+/* FORMS */
+
+input.uk-input,
+textarea.uk-textarea {
+    background: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+}
+
+input.uk-input::placeholder,
+textarea.uk-textarea::placeholder {
+    color: #fff;
 }
 
 .uk-text-medium {
@@ -206,7 +215,7 @@ div.uk-navbar-dropdown ul li {
 } */
 
 ul.uk-navbar-nav>li>a:not(.top-navbar a) {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     transition: .1s;
     color: #000;
@@ -247,7 +256,12 @@ div.hero-text p {
 }
 
 div.hero-text h1 {
-    font-size: 3.5rem;
+    font-size: 9rem;
+    color: #fff;
+}
+
+div.hero-text h1 span {
+    margin-left: 20%;
 }
 
 div.hero-text li {

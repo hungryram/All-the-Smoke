@@ -1,18 +1,14 @@
-{{ $optBlock := dict "display" "block" }}
-
-<div class="uk-section">
+<div class="uk-section uk-section-large" style="background: #101417;">
     <div class="uk-container">
-        <div class="uk-grid-large" uk-grid>
-            <div class="uk-width-expand">
-                <img src="https://res.cloudinary.com/hungryram19/image/upload/v1631588576/randy-nong/rn-insurance/randy-nong-in-office.jpg" alt="Randy Nong sitting in RN Insurance office">
-            </div>
-            <div class="uk-width-3-5@s">
-                <div class="uk-card">
-                    <h3 class="uk-margin-remove uk-h4" style="border-left: 4px solid #aa0817;padding-left: 10px;">{{ .Site.Data.home.introduction.subtitle }}</h3>
-                    <h2 class="uk-margin-small-top">{{ .Site.Data.home.introduction.heading }}</h2>
-                    {{ .Site.Data.home.introduction.body | $.Page.RenderString $optBlock }}
-                    <a href="/about" class="uk-button uk-button-primary slide_right">Learn more</a>
+        <div class="uk-flex uk-flex-center">
+            <div class="uk-width-2xlarge uk-text-center uk-light">
+                <h3 class="uk-margin-remove">About</h3>
+                <h2 class="uk-text-uppercase uk-h1 uk-margin-remove">All the Smoke</h2>
+                <div class="uk-margin-large-top">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, recusandae! Sed laboriosam porro qui autem, natus totam dolore quisquam est consequatur? Minus voluptates a sequi, distinctio rerum cumque asperiores autem natus impedit laudantium quo repellendus quibusdam ducimus illo sapiente quos debitis magnam quas neque recusandae! Autem optio dolores, earum officia nulla quis! Magnam quae dolorum culpa non necessitatibus incidunt. Obcaecati minus eos itaque blanditiis consequatur laborum, omnis explicabo, unde reiciendis perferendis esse fugit aspernatur rem. Ratione culpa natus facilis magni sequi eius, illum asperiores? Sed autem aut, nobis, minus quos voluptatum cumque numquam assumenda a sequi, porro sapiente velit fugit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit alias assumenda dolores, illum aspernatur id commodi nemo excepturi reprehenderit molestias iste aperiam quaerat fuga laborum sed iusto? Quibusdam, modi reprehenderit.</p>
                 </div>
+                <a href="" class="uk-link-text uk-text-bold hr-border-bottom">Get in touch</a>
             </div>
         </div>
     </div>

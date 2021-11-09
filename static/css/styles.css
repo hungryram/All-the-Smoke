@@ -17,11 +17,11 @@ body .uk-heading-large,
 body .uk-heading-medium, 
 body .uk-heading-small, 
 body .uk-heading-xlarge {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
     color: #535556;
     font-size: 15px;
     line-height: 35px;
@@ -31,8 +31,27 @@ html body {
     font-size: 16px;
 }
 
+body main {
+    background-image: url("https://res.cloudinary.com/hungryram19/image/upload/v1636418305/melanie-tran/background.jpg");
+}
+
+.main-bg {
+    height: 100vh;
+}
+
+div.uk-card-default {
+    background: #d2d2d2;
+}
+
 .hr-underline {
     text-decoration: underline;
+}
+
+.hr__links li {
+    border-top: 1px solid rgb(184, 184, 184);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-transform: uppercase;
 }
 
 .hr-border-bottom {
@@ -63,7 +82,7 @@ ul.uk-breadcrumb>*>:hover {
 }
 
 a.uk-accordion-title {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
     font-weight: 600;
     font-size: 1rem;
 }
@@ -222,7 +241,7 @@ div.uk-navbar-dropdown ul li {
 } */
 
 ul.uk-navbar-nav>li>a:not(.top-navbar a) {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Serif', serif;
     font-weight: 500;
     transition: .1s;
     color: #000;
@@ -263,7 +282,7 @@ div.hero-text p {
 }
 
 div.hero-text h1 {
-    font-size: 9rem;
+    font-size: 8rem;
     color: #fff;
 }
 

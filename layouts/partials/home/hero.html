@@ -1,27 +1,39 @@
-<div class="uk-background-cover uk-flex uk-flex-middle" style="background:url(https://res.cloudinary.com/hungryram19/image/upload/v1634317824/melanie-tran/blue-background.jpg) no-repeat center;background-size:cover" uk-height-viewport>
-    <div class="uk-width-1-1">
-        <div class="uk-container uk-container-large" style="position:relative">
-            <div class="uk-grid uk-flex uk-flex-middle" uk-height-viewport>
-                <div class="uk-width-1-2">
-                    <div class="hero-text">
-                        <h1 class="uk-light">ALL THE <span>SMOKE</span></h1>
-                        <p style="color:#737373">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, labore voluptatibus. Libero qui debitis obcaecati blanditiis.</p>
-                    </div>
-                </div>
-                <div class="uk-width-1-2">
-                    <img src="https://res.cloudinary.com/hungryram19/image/upload/v1634326794/melanie-tran/red-hoodie.png" alt="" style="position:absolute;bottom:0;right:0;margin: 0 auto; width:80%">
-                </div>
+<style>
+    .bg-logo {
+        position:relative;
+        z-index: -1;
+    }
+
+    @media screen and (max-width: 768px) {
+        .bg-logo {
+            bottom: 60px;
+        }
+    }
+
+    .hero__container:after {
+        background: black;
+        content: '';
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -2;
+    }
+</style>
+<div class="uk-background-norepeat uk-background-cover uk-background-center-center uk-flex uk-flex-middle hero__bg"
+	uk-height-viewport
+	style="background:url(https://res.cloudinary.com/hungryram19/image/upload/v1635787252/darius-clark/banner2.png) no-repeat center;background-size:cover;position;relative;z-index:5"
+    
+    >
+	<!-- <div style="position:relative;display: flex; align-items:center;justify-content:center;width:100%">
+		<div class="uk-container uk-container-large" style="position:relative;display:flex;align-items:center">
+			<img src="https://res.cloudinary.com/hungryram19/image/upload/v1634016273/darius-clark/dac-white-logo.png" alt="" class="bg-logo">
+		</div>
+	</div> -->
+			<div class="uk-container uk-container-xlarge hero__container">
+                <img src="https://res.cloudinary.com/hungryram19/image/upload/v1634016273/darius-clark/dac-white-logo.png" alt="" class="bg-logo" uk-scrollspy="uk-animation-scale-down" uk-parallax="blur: 10; blur: 50;">
             </div>
 
-        </div>
-        <div class="uk-position-bottom uk-padding">
-            <div class="uk-white">
-                <ul class="uk-list">
-                    <li class="uk-inline"><a href="" class="uk-white uk-hidden">Facebook</a></li>
-                    <li class="uk-inline uk-margin-medium-right"><a href="" class="uk-white">Instagram</a></li>
-                    <li class="uk-inline"><a href="" class="uk-white">Twitter</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
 </div>

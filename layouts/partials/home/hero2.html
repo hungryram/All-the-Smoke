@@ -1,0 +1,38 @@
+<style>
+    .hero__container .hero-text {
+        position:relative;
+        z-index: -1;
+    }
+
+    @media screen and (max-width: 768px) {
+        .bg-logo {
+            bottom: 60px;
+        }
+    }
+
+    .hero__container:after {
+        background: #101417;
+        content: '';
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -2;
+    }
+</style>
+<div class="uk-flex uk-flex-middle hero__bg"
+	uk-height-viewport
+	style="background:url(https://res.cloudinary.com/hungryram19/image/upload/v1634326794/melanie-tran/red-hoodie.png);background-size:cover;position;relative;z-index:5;background-position:70%;background-repeat:no-repeat"
+    >
+    <div class="uk-width-1-2">
+        <div class="uk-container uk-container-expand hero__container">
+            <div class="hero-text">
+                <h1 class="uk-light">ALL THE <span>SMOKE</span></h1>
+                <p style="color:#737373">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, labore voluptatibus. Libero qui debitis obcaecati blanditiis.</p>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -35,11 +35,15 @@ sections:
   label: Apparels
   create: all
   match: "**/*"
+  templates:
+  - apparels
 - type: directory
   path: content/shop
   label: Shop
   create: all
   match: "**/*"
+  templates:
+  - shop
 - type: heading
   label: Default Pages
 - type: document

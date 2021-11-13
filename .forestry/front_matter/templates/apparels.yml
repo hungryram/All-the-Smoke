@@ -26,4 +26,5 @@ fields:
   template: seo
   label: Search Engine Optimization
 pages:
+- content/apparels/los-angeles-hoodie.md
 - content/apparels/smoke-shirt.md

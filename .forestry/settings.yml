@@ -30,28 +30,24 @@ sections:
   templates:
   - heading-and-body
   - blog
+- type: directory
+  path: content/apparels
+  label: Apparels
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/shop
+  label: Shop
+  create: all
+  match: "**/*"
 - type: heading
   label: Default Pages
-- type: directory
-  path: content/insurance
-  label: Insurance
-  create: documents
-  match: "**/*"
-  templates:
-  - services
-  - heading-and-body
 - type: document
   path: content/about/_index.md
   label: About
 - type: document
   path: content/contact/_index.md
   label: Contact
-- type: document
-  path: content/faq/_index.md
-  label: FAQ
-- type: document
-  path: content/testimonials/_index.md
-  label: Testimonials
 - type: heading
   label: Legal
 - type: directory

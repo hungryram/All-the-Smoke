@@ -2,8 +2,22 @@
 {{ $contact := .Site.Data.profile.contact_information }}
 
 <footer class="footer">
-
+<div class="uk-section-small uk-section">
+    <div class="uk-container uk-container-large">
+        <div class="uk-child-width-1-2@m" uk-grid>
+            <div>
+                <p class="uk-light uk-text-small">&copy; Copyright {{ dateFormat "2006" now }}, {{ .Site.Data.profile.company_name }}</p>
+            </div>
+            <div>
+                <ul class="hr-legals uk-padding-remove uk-text-right@m">
+                    {{ range where $.Site.Pages.ByWeight "Type" "legal" }}
+                    <li class="uk-light uk-text-small uk-display-inline uk-margin-medium-right"><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                  </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </footer>
-
 </body>
 </html>

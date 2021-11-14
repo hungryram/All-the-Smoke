@@ -1,27 +1,15 @@
 {{ define "main" }}
     <div class="uk-section">
         <div class="uk-container">
-            <div class="uk-child-width-1-2@s uk-grid-large" uk-grid>
+            <div class="uk-child-width-1-2@s uk-flex uk-flex-middle" uk-grid>
                 <div>
-                    <div class="uk-position-relative uk-dark" tabindex="-1" uk-slider>
-
-                        <ul class="uk-slider-items uk-child-width-1-1">
-                            {{ range .Params.gallery }}
-                            <li style="background:white;">
-                                <img src="{{ . }}" alt="">
-                            </li>
-                            {{ end }}
-                        </ul>
-                    
-                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-                    
-                    </div>
+                    {{ range .Params.gallery }}
+                        <img src="{{ . }}" alt="">
+                    {{ end }}
                 </div>
                 <div class="uk-light">
                     <h1>{{ .Title }}</h1>
-                    <div class="uk-margin-medium-top uk-margin-medium-bottom">
-                        <h4 class="uk-h3">$39.99</h4>
+                    <div class="uk-margin-medium-top">
                         {{ .Content }}
                     </div>
                     <a href="/" class="uk-button uk-button-primary">Get in touch</a>

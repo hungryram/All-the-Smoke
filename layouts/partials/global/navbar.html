@@ -18,3 +18,28 @@
         </div>
     </nav>
 </div>
+
+<div id="modal-full" class="uk-modal-full uk-modal mobile__wrapper" uk-modal>
+    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+        <button class="uk-modal-close-full" type="button" uk-close></button>
+
+        <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical uk-text-center" uk-nav uk-scrollspy="cls: uk-animation-slide-bottom; target: .animate; delay: 300; repeat: true">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <li class="uk-parent animate">
+                <a href="#" class="uk-text-light">{{ .Name }}</a>
+                <ul class="uk-nav-sub">
+                    {{ range .Children }}
+                    <li><a href="{{ .URL | absURL }}" class="uk-text-light">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </li>
+            {{ else }}
+            <li class="animate"><a href="{{ .URL | absURL }}" class="uk-text-light">{{ .Name }}</a></li>
+            {{ end }}
+            {{ end }}
+
+        </ul>
+    </div>
+</div>

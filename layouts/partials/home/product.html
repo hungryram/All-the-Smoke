@@ -16,9 +16,10 @@
                 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid">
                     {{ range where .Site.RegularPages "Type" "shop" }}
                     <li>
-                        <a href="">
+                        <a href="{{ .Permalink }}" class="uk-link-text uk-light uk-text-center">
                             <div class="uk-panel">
-                                <img src="https://res.cloudinary.com/hungryram19/image/upload/v1636404663/melanie-tran/Mylar-Designs-HellCat-01.png" alt="">
+                                <img src="{{ index .Params.gallery 0 }}" alt="">
+                                <h2 class="uk-h3">{{ .Title }}</h2>
                             </div>
                         </a>
                     </li>

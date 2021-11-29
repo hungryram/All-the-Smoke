@@ -1,22 +1,12 @@
 
     <div class="uk-section main-bg">
-        <div class="uk-container uk-container-large uk-light" uk-scrollspy="cls:uk-animation-slide-bottom-medium">
-            <div class="uk-section">
-                <div class="uk-grid">
-                    <div class="uk-width-1-2@s">
-                        <h2 class="uk-text-uppercase uk-text-italic" style="font-size: 5rem;">Strands</h2>
-                    </div>
-                    <div class="uk-width-1-2@s">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quaerat impedit. Suscipit temporibus consequatur vel enim debitis, reprehenderit placeat odit illo incidunt excepturi harum similique nam sapiente eum, accusamus modi</p>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+        <div class="uk-container uk-container-large uk-dark" uk-scrollspy="cls:uk-animation-slide-bottom-medium">
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider>
 
                 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid">
                     {{ range where .Site.RegularPages "Type" "shop" }}
                     <li>
-                        <a href="{{ .Permalink }}" class="uk-link-text uk-light uk-text-center">
+                        <a href="{{ .Permalink }}" class="uk-link-reset uk-text-center">
                             <div class="uk-panel">
                                 <img src="{{ index .Params.gallery 0 }}" alt="">
                                 <h2 class="uk-h3">{{ .Title }}</h2>

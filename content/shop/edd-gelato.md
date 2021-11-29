@@ -1,7 +1,7 @@
 +++
 gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1636404859/melanie-tran/Mylar-Design-EDD-Gelato.png"]
 meta_description = ""
-title = "EDD Gelato"
+title = "PPP Gelato"
 title_tag = ""
 
 +++

@@ -25,13 +25,22 @@ body {
     color: #535556;
     font-size: 15px;
     line-height: 35px;
+	background: #EEEEEE;
+}
+
+h2.uk-heading-line>::after {
+	border-bottom: calc(.2px + .02em) solid #e5e5e5;
+}
+
+div.uk-overlay-primary {
+    background: rgb(0 0 0 / 40%);
 }
 
 html body {
     font-size: 16px;
 }
 
-body main {
+.bg {
     background-image: url("https://res.cloudinary.com/hungryram19/image/upload/v1636418305/melanie-tran/background.jpg");
 }
 
@@ -244,13 +253,6 @@ ul.uk-navbar-nav>li>a:not(.top-navbar a) {
     font-family: 'PT Serif', serif;
     font-weight: 500;
     transition: .1s;
-    color: #000;
-}
-
-div ul.uk-navbar-nav>li>a:hover {
-    border-bottom: 3px solid #2689D6;
-    transition: .1s;
-    color: #2689D6;
 }
 
 ul.uk-nav-parent-icon>.uk-parent>a::after {
@@ -277,41 +279,6 @@ div.uk-overlay-hero {
     background:rgb(9 10 21 / 20%);
 }
 
-div.hero-text p {
-    font-size: 17.5px;
-}
-
-div.hero-text h1 {
-    font-size: 7rem;
-    color: #fff;
-}
-
-div.hero-text h1 span {
-    margin-left: 20%;
-}
-
-div.hero-text li {
-    font-weight: 500;
-}
-
-div.hero-text li img {
-    margin-right: 15px;
-}
-
-@media screen and (max-width: 800px) {
-    div.hero-text {
-        padding: 20px;
-    }
-
-    div.hero-text h1 {
-        font-size: 3rem;
-        font-weight: 600;
-    }
-
-    div.hero-text p.uk-text-normal {
-        font-size: 15px;
-    }
-}
 
 /* FEATURED SECTION */
 

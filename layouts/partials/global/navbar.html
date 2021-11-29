@@ -4,7 +4,7 @@
 {{ $headerSocial := .Site.Data.profile.social_media }}
 
 <!-- mobile -->
-<div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-dark; cls-inactive: top: 400">
+<div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: top: 400">
     <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-padding">
         <div class="uk-navbar-left">
             <a href="{{ .Site.BaseURL }}">
@@ -12,23 +12,24 @@
             </a>
         </div>
         <div class="uk-navbar-right">
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-            {{ if .HasChildren }}
-            <li>
-                <a href="#">{{ .Name }}<span class="uk-margin-small-left" uk-icon="chevron-down"></span></a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                        {{ range .Children }}
-                        <li class="uk-active"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
-                        {{ end }}
-                    </ul>
-                </div>
-            </li>
-            {{ else }}
-            <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
-            {{ end }}
-            {{ end }}
+            <ul class="uk-navbar-nav uk-margin-medium-left uk-light">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                <li>
+                    <a href="#">{{ .Name }}<span class="uk-margin-small-left" uk-icon="chevron-down"></span></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            {{ range .Children }}
+                            <li class="uk-active"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </li>
+                {{ else }}
+                <li><a href="{{ .URL | absURL }}" class="uk-button uk-button-text">{{ .Name }}</a></li>
+                {{ end }}
+                {{ end }}
             </ul>
         </div>
     </nav>

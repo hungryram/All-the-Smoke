@@ -1,7 +1,7 @@
 +++
 gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1636404859/melanie-tran/Mylar-Design-City-Boys.png"]
 meta_description = ""
-title = "City Boys"
+title = "City Boys Up Runtz"
 title_tag = ""
 
 +++

@@ -1,29 +1,31 @@
 
-    <div class="uk-section main-bg">
-        <div class="uk-container uk-container-large" uk-scrollspy="cls:uk-animation-slide-bottom-medium">
-            <div class="uk-section uk-light">
-                <div class="uk-grid">
-                    <div class="uk-width-1-2@s">
-                        <h2 class="uk-text-uppercase uk-text-italic" style="font-size: 5rem;">Apparels</h2>
+    <div class="uk-section bg uk-section-large uk-margin-large-top">
+        <div class="uk-section uk-light">
+            <div class="uk-container uk-container-large">
+                <div class="uk-child-width-1-2@s" uk-grid>
+                    <div>
+                        <h2 class="uk-heading-large">Apparel</h2>
                     </div>
-                    <div class="uk-width-1-2@s">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, quaerat impedit. Suscipit temporibus consequatur vel enim debitis, reprehenderit placeat odit illo incidunt excepturi harum similique nam sapiente eum, accusamus modi</p>
+                    <div>
+                        <p class="uk-text-large">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, deserunt. Voluptate cupiditate eum iure, natus aspernatur quisquam perspiciatis dignissimos quis.</p>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="uk-container uk-container-large" uk-scrollspy="cls:uk-animation-slide-bottom-medium">
             <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slider>
 
-                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid uk-grid-match">
+                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-grid-match">
                     {{ range where .Site.RegularPages "Type" "apparels" }}
                     <li>
-                        <a href="{{ .Permalink }}">
+                        <a href="{{ .Permalink }}" class="uk-link-reset">
                             <div>
                                 <div class="uk-card uk-card-default uk-text-center">
-                                    <div class="uk-card-media-top uk-cover-container">
+                                    <div class="uk-card-media-top uk-cover-container uk-padding">
                                         <img src="{{ index .Params.gallery 0 }}" alt="" uk-cover>
                                         <canvas height="350"></canvas>
                                     </div>
-                                    <div class="uk-card-body">
+                                    <div class="uk-card-body" style="padding:40px 5px">
                                         <div class="uk-grid uk-child-width-1-2">
                                             <div>
                                                 <h3 class="uk-dark uk-h4">{{ .Title }}</h3>

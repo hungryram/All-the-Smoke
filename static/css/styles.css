@@ -33,7 +33,7 @@ h2.uk-heading-line>::after {
 }
 
 div.uk-overlay-primary {
-    background: rgb(0 0 0 / 40%);
+    background: rgb(25 25 25 / 62%);
 }
 
 html body {
@@ -44,12 +44,9 @@ html body {
     background-image: url("https://res.cloudinary.com/hungryram19/image/upload/v1636418305/melanie-tran/background.jpg");
 }
 
-.main-bg {
-    height: 100vh;
-}
 
 div.uk-card-default {
-    background: #d2d2d2;
+    background: #eeeeee;
 }
 
 .hr-underline {

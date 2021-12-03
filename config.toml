@@ -9,3 +9,7 @@ weight = 4
 name = "Home"
 url = "/"
 weight = 1
+[[menu.main]]
+name = "Verification"
+weight = 2
+url = "/verification"

@@ -1,11 +1,13 @@
 {{ partial "global/head" . }}
-<div style="background:#000">
+<div class="uk-position-top">
     {{ partial "global/navbar" . }}
 </div>
-<main>
+<div class="uk-section uk-section-large bg">
+    <main>
 {{ block "main" . }}
 
 {{ end }}
 </main>
+</div>
 
 {{ partial "global/footer" . }}

@@ -9,7 +9,7 @@ branding:
   site_title: RN Insurance
   logo: https://res.cloudinary.com/hungryram19/image/upload/v1634317410/melanie-tran/all-the-smoke-logo.png
   dark_logo: https://res.cloudinary.com/hungryram19/image/upload/v1634317410/melanie-tran/all-the-smoke-logo.png
-  favicon: https://res.cloudinary.com/hungryram19/image/upload/v1631038615/randy-nong/rn-insurance/Gray-01_zr1qjl.png
+  favicon: 
   logo_width: 
 colors:
   button_background_color: ''

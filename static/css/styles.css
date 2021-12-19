@@ -205,6 +205,11 @@ div.page__banner__inner {
 
 /* NAVBAR */
 
+.uk-sticky.uk-sticky-fixed.undefined.uk-sticky-below {
+    background: black;
+    transition: .4s;
+}
+
 ul.uk-navbar-item, ul.uk-navbar-nav>li>a, .uk-navbar-toggle {
 	min-height: 40px;
 }

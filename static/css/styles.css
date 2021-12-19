@@ -205,6 +205,14 @@ div.page__banner__inner {
 
 /* NAVBAR */
 
+ul.uk-navbar-item, ul.uk-navbar-nav>li>a, .uk-navbar-toggle {
+	min-height: 40px;
+}
+
+ul.uk-light .uk-button-text::before {
+	border-bottom-color: #bf0038;
+}
+
 div.top-navbar .uk-navbar-nav>li>a {
     min-height: 40px;
     text-transform: unset;

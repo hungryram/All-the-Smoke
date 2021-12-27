@@ -1,0 +1,32 @@
+{{ define "main" }}
+    <div class="uk-section">
+        <div class="uk-container">
+            <div class="uk-child-width-1-3@m shop__apparel" uk-grid uk-scrollspy="cls:uk-animation-slide-bottom-medium">
+                {{ range .Pages }}
+                <div>
+                    <a href="{{ .Permalink }}" class="uk-link-reset">
+                        <div>
+                            <div class="uk-card uk-card-default uk-text-center">
+                                <div class="uk-card-media-top uk-cover-container uk-padding">
+                                    <img src="{{ index .Params.gallery 0 }}" alt="" uk-cover>
+                                    <canvas height="350"></canvas>
+                                </div>
+                                <div class="uk-card-body" style="padding:40px 5px">
+                                    <div class="uk-grid uk-child-width-1-1">
+                                        <div>
+                                            <h3 class="uk-dark uk-h4">{{ .Title }}</h3>
+                                        </div>
+                                        <div>
+                                            <span>$20</span>
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+{{ end }}

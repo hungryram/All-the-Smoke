@@ -2,44 +2,69 @@
 {{ $navColor := .Site.Data.appearance.header }}
 {{ $navContact := .Site.Data.profile.contact_information }}
 {{ $headerSocial := .Site.Data.profile.social_media }}
+<div class="uk-visible@s">
+    <nav class="main-nav uk-padding-small uk-navbar-container uk-navbar-transparent uk-light">
+        <div class="uk-container uk-container-xlarge">
+            <div uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="{{ .Site.BaseURL }}">
+                        <img src="{{ $navbar.logo }}" alt="{{ .Site.Data.profile.company_name }}" width="150">
+                    </a>
 
-<!-- mobile -->
-<div uk-sticky="animation: uk-animation-slide-top-medium; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: top: 400">
-    <nav class="uk-navbar uk-navbar-container uk-navbar-transparent uk-padding-small">
-        <div class="uk-navbar-left">
-            <a href="{{ .Site.BaseURL }}">
-                <img src="{{ .Site.Data.appearance.branding.logo }}" alt="{{ .Site.Data.profile.company_name }}" width="140">
-            </a>
-        </div>
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav uk-margin-medium-left uk-light">
-                {{ $currentPage := . }}
-                {{ range .Site.Menus.main }}
-                {{ if .HasChildren }}
-                <li>
-                    <a href="#">{{ .Name }}<span class="uk-margin-small-left" uk-icon="chevron-down"></span></a>
-                    <div class="uk-navbar-dropdown">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            {{ range .Children }}
-                            <li class="uk-active"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
-                            {{ end }}
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        {{ $currentPage := . }}
+                        {{ range .Site.Menus.main }}
+                        {{ if .HasChildren }}
+                        <li>
+                            <a href="#">{{ .Name }}<span class="uk-margin-small-left" uk-icon="chevron-down"></span></a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    {{ range .Children }}
+                                    <li class="uk-active"><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                                    {{ end }}
+                                </ul>
+                            </div>
+                        </li>
+                        {{ else }}
+                        <li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+                        {{ end }}
+                        {{ end }}
                         </ul>
-                    </div>
-                </li>
-                {{ else }}
-                <li><a href="{{ .URL | absURL }}" class="uk-button uk-button-text">{{ .Name }}</a></li>
-                {{ end }}
-                {{ end }}
-            </ul>
+                </div>
+
+            </div>
         </div>
     </nav>
 </div>
+
+
+<!-- mobile -->
+
+<!-- mobile -->
+<div>
+    <nav class="uk-navbar uk-hidden@l uk-box-shadow-small uk-padding-small">
+        <div class="uk-navbar-left">
+            <a href="{{ .Site.BaseURL }}">
+                <img src="{{ .Site.Data.appearance.branding.logo }}" alt="{{ .Site.Data.profile.company_name }}" width="100">
+            </a>
+        </div>
+        <div class="uk-navbar-right">
+            <a class="uk-navbar-toggle" href="#modal-full" uk-toggle>
+                <svg width="20" fill="#fff" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon"><rect y="9" width="15" height="2"></rect><rect y="3" width="20" height="2"></rect><rect y="15" width="10" height="2"></rect></svg>
+            </a>
+        </div>
+    </nav>
+    </div>
+
+
 
 <div id="modal-full" class="uk-modal-full uk-modal mobile__wrapper" uk-modal>
     <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
         <button class="uk-modal-close-full" type="button" uk-close></button>
 
-        <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical uk-text-center" uk-nav uk-scrollspy="cls: uk-animation-slide-bottom; target: .animate; delay: 300; repeat: true">
+        <ul class="uk-nav-default uk-nav-parent-icon uk-margin-auto-vertical uk-text-center" uk-nav uk-scrollspy="cls: uk-animation-fade; target: .animate; delay: 150; repeat: true">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
@@ -55,7 +80,6 @@
             <li class="animate"><a href="{{ .URL | absURL }}" class="uk-text-light">{{ .Name }}</a></li>
             {{ end }}
             {{ end }}
-
         </ul>
     </div>
 </div>

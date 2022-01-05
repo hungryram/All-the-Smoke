@@ -1,5 +1,15 @@
 /* TYPOGRAPHY */
 
+@font-face {
+    font-family: Louis;
+    src: url("/assets/Louis-George-Cafe.ttf");
+  }
+
+  @font-face {
+    font-family: hoefler;
+    src: url("/assets/hoefler-text.ttf");
+  }
+
 body h1,
 body h2,
 body h3,
@@ -17,11 +27,11 @@ body .uk-heading-large,
 body .uk-heading-medium, 
 body .uk-heading-small, 
 body .uk-heading-xlarge {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: hoefler;
 }
 
 body {
-    font-family: 'PT Serif', serif;
+    font-family: Louis;
     color: #535556;
     font-size: 15px;
     line-height: 35px;
@@ -205,6 +215,16 @@ div.page__banner__inner {
 
 /* NAVBAR */
 
+.uk-light ul.uk-navbar-nav>li>a {
+    transition: .3s;
+    color: #fff;
+}
+
+.uk-light ul.uk-navbar-nav>li>a:hover {
+    color: #bf0038;
+    transition: .3s;
+}
+
 .uk-sticky.uk-sticky-fixed.undefined.uk-sticky-below {
     background: black;
     transition: .4s;
@@ -260,7 +280,7 @@ div.uk-navbar-dropdown ul li {
 } */
 
 ul.uk-navbar-nav>li>a:not(.top-navbar a) {
-    font-family: 'PT Serif', serif;
+    font-family: Louis;
     font-weight: 500;
     transition: .1s;
 }

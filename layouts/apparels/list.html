@@ -1,7 +1,7 @@
 {{ define "main" }}
     <div class="uk-section">
         <div class="uk-container">
-            <div class="uk-child-width-1-3@m shop__apparel" uk-grid uk-scrollspy="cls:uk-animation-slide-bottom-medium">
+            <div class="uk-child-width-1-4@m uk-child-width-1-2@s shop__apparel" uk-grid uk-scrollspy="cls:uk-animation-slide-bottom-medium">
                 {{ range .Pages }}
                 <div>
                     <a href="{{ .Permalink }}" class="uk-link-reset">
@@ -14,7 +14,7 @@
                                 <div class="uk-card-body" style="padding:40px 5px">
                                     <div class="uk-grid uk-child-width-1-1">
                                         <div>
-                                            <h3 class="uk-dark uk-h4">{{ .Title }}</h3>
+                                            <p class="uk-dark">{{ .Title }}</p>
                                         </div>
                                         <div>
                                             <span>$20</span>

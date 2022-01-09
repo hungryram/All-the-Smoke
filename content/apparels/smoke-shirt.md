@@ -1,6 +1,6 @@
 +++
 body = ""
-gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1636411281/melanie-tran/Merch-11.jpg", "https://res.cloudinary.com/hungryram19/image/upload/v1636411280/melanie-tran/Merch-1.jpg"]
+gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1641695604/melanie-tran/all-the-smoke-black-shirt_kvnxtq.png", "https://res.cloudinary.com/hungryram19/image/upload/v1641695604/melanie-tran/all-the-smoke-black-shirt-backside_nntlds.png"]
 meta_description = ""
 title = "Smoke Shirt"
 title_tag = ""

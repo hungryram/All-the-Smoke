@@ -502,26 +502,26 @@ footer.footer svg:hover {
   }
 
   .glitch::after {
-    content: attr(data-trick);
+    content: attr(data-glitch);
     position: absolute;
     top: 0;
     left: 0.5rem;
     color: white;
     background-color: #000;
     overflow: hidden;
-    text-shadow: -0.5rem 0 #ff0000;
+    text-shadow: -0.5rem 0 #df235e;
     clip: rect(0, 90rem, 0, 0);
     animation: noise 4s infinite linear alternate-reverse;
   }
   .glitch::before {
-    content: attr(data-trick);
+    content: attr(data-glitch);
     position: absolute;
     top: 0;
     left: -1rem;
     color: white;
     background-color: #000;
     overflow: hidden;
-    text-shadow: 0.3rem 0 #ff0000;
+    text-shadow: 0.3rem 0 #df235e;
     clip: rect(0, 90rem, 0, 0);
     animation: noise 4s infinite linear alternate-reverse;
   }

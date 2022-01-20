@@ -38,6 +38,15 @@ body {
 	background: #EEEEEE;
 }
 
+body a:hover:not(.uk-button) {
+    color: #bf0038!important;
+    transition: .2s;
+}
+
+body a {
+    transition: .2s;
+}
+
 h2.uk-heading-line>::after {
 	border-bottom: calc(.2px + .02em) solid #e5e5e5;
 }
@@ -65,8 +74,8 @@ div.uk-card-default {
 
 .hr__links li {
     border-top: 1px solid rgb(184, 184, 184);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-transform: uppercase;
 }
 
@@ -483,3 +492,198 @@ footer.footer svg:hover {
 .shop__apparel div {
 	transition: .3s;
 }
+
+
+
+.glitch {
+    color: white;
+    width: 40rem;
+    position: relative;
+  }
+
+  .glitch::after {
+    content: attr(data-trick);
+    position: absolute;
+    top: 0;
+    left: 0.5rem;
+    color: white;
+    background-color: #000;
+    overflow: hidden;
+    text-shadow: -0.5rem 0 #ff0000;
+    clip: rect(0, 90rem, 0, 0);
+    animation: noise 4s infinite linear alternate-reverse;
+  }
+  .glitch::before {
+    content: attr(data-trick);
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    color: white;
+    background-color: #000;
+    overflow: hidden;
+    text-shadow: 0.3rem 0 #ff0000;
+    clip: rect(0, 90rem, 0, 0);
+    animation: noise 4s infinite linear alternate-reverse;
+  }
+  
+  @-webkit-keyframes noise {
+    0% {
+      clip: rect(12rem, 99.99rem, 4rem, 0);
+    }
+    4% {
+      clip: rect(10rem, 99.99rem, 6rem, 0);
+    }
+    8% {
+      clip: rect(6rem, 99.99rem, 12rem, 0);
+    }
+    12% {
+      clip: rect(12rem, 99.99rem, 12rem, 0);
+    }
+    16% {
+      clip: rect(2rem, 99.99rem, 12rem, 0);
+    }
+    20% {
+      clip: rect(3rem, 99.99rem, 10rem, 0);
+    }
+    24% {
+      clip: rect(6rem, 99.99rem, 10rem, 0);
+    }
+    28% {
+      clip: rect(5rem, 99.99rem, 6rem, 0);
+    }
+    32% {
+      clip: rect(5rem, 99.99rem, 11rem, 0);
+    }
+    36% {
+      clip: rect(9rem, 99.99rem, 4rem, 0);
+    }
+    40% {
+      clip: rect(8rem, 99.99rem, 10rem, 0);
+    }
+    44% {
+      clip: rect(4rem, 99.99rem, 1rem, 0);
+    }
+    48% {
+      clip: rect(6rem, 99.99rem, 7rem, 0);
+    }
+    52% {
+      clip: rect(10rem, 99.99rem, 3rem, 0);
+    }
+    56% {
+      clip: rect(3rem, 99.99rem, 9rem, 0);
+    }
+    60% {
+      clip: rect(9rem, 99.99rem, 4rem, 0);
+    }
+    64% {
+      clip: rect(11rem, 99.99rem, 1rem, 0);
+    }
+    68% {
+      clip: rect(6rem, 99.99rem, 4rem, 0);
+    }
+    72% {
+      clip: rect(5rem, 99.99rem, 4rem, 0);
+    }
+    76% {
+      clip: rect(8rem, 99.99rem, 4rem, 0);
+    }
+    80% {
+      clip: rect(12rem, 99.99rem, 12rem, 0);
+    }
+    84% {
+      clip: rect(12rem, 99.99rem, 3rem, 0);
+    }
+    88% {
+      clip: rect(12rem, 99.99rem, 12rem, 0);
+    }
+    92% {
+      clip: rect(8rem, 99.99rem, 2rem, 0);
+    }
+    96% {
+      clip: rect(8rem, 99.99rem, 11rem, 0);
+    }
+    100% {
+      clip: rect(9rem, 99.99rem, 2rem, 0);
+    }
+  }
+  
+  @keyframes noise {
+    0% {
+      clip: rect(12rem, 99.99rem, 4rem, 0);
+    }
+    4% {
+      clip: rect(10rem, 99.99rem, 6rem, 0);
+    }
+    8% {
+      clip: rect(6rem, 99.99rem, 12rem, 0);
+    }
+    12% {
+      clip: rect(12rem, 99.99rem, 12rem, 0);
+    }
+    16% {
+      clip: rect(2rem, 99.99rem, 12rem, 0);
+    }
+    20% {
+      clip: rect(3rem, 99.99rem, 10rem, 0);
+    }
+    24% {
+      clip: rect(6rem, 99.99rem, 10rem, 0);
+    }
+    28% {
+      clip: rect(5rem, 99.99rem, 6rem, 0);
+    }
+    32% {
+      clip: rect(5rem, 99.99rem, 11rem, 0);
+    }
+    36% {
+      clip: rect(9rem, 99.99rem, 4rem, 0);
+    }
+    40% {
+      clip: rect(8rem, 99.99rem, 10rem, 0);
+    }
+    44% {
+      clip: rect(4rem, 99.99rem, 1rem, 0);
+    }
+    48% {
+      clip: rect(6rem, 99.99rem, 7rem, 0);
+    }
+    52% {
+      clip: rect(10rem, 99.99rem, 3rem, 0);
+    }
+    56% {
+      clip: rect(3rem, 99.99rem, 9rem, 0);
+    }
+    60% {
+      clip: rect(9rem, 99.99rem, 4rem, 0);
+    }
+    64% {
+      clip: rect(11rem, 99.99rem, 1rem, 0);
+    }
+    68% {
+      clip: rect(6rem, 99.99rem, 4rem, 0);
+    }
+    72% {
+      clip: rect(5rem, 99.99rem, 4rem, 0);
+    }
+    76% {
+      clip: rect(8rem, 99.99rem, 4rem, 0);
+    }
+    80% {
+      clip: rect(12rem, 99.99rem, 12rem, 0);
+    }
+    84% {
+      clip: rect(12rem, 99.99rem, 3rem, 0);
+    }
+    88% {
+      clip: rect(12rem, 99.99rem, 12rem, 0);
+    }
+    92% {
+      clip: rect(8rem, 99.99rem, 2rem, 0);
+    }
+    96% {
+      clip: rect(8rem, 99.99rem, 11rem, 0);
+    }
+    100% {
+      clip: rect(9rem, 99.99rem, 2rem, 0);
+    }
+  }

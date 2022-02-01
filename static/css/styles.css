@@ -506,12 +506,11 @@ footer.footer svg:hover {
     position: absolute;
     top: 0;
     left: 0.5rem;
-    color: white;
-    background-color: #000;
+    color: black;
     overflow: hidden;
     text-shadow: -0.5rem 0 #df235e;
     clip: rect(0, 90rem, 0, 0);
-    animation: noise 4s infinite linear alternate-reverse;
+    animation: noise 3s infinite linear alternate-reverse;
   }
   .glitch::before {
     content: attr(data-glitch);
@@ -519,11 +518,17 @@ footer.footer svg:hover {
     top: 0;
     left: -1rem;
     color: white;
-    background-color: #000;
     overflow: hidden;
     text-shadow: 0.3rem 0 #df235e;
     clip: rect(0, 90rem, 0, 0);
-    animation: noise 4s infinite linear alternate-reverse;
+    animation: noise 3s infinite linear alternate-reverse;
+  }
+
+  @media screen and (max-width: 800px) {
+    .glitch::after,
+    .glitch::before {
+      font-size: 4rem;
+    }
   }
   
   @-webkit-keyframes noise {

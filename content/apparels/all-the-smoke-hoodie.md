@@ -2,7 +2,7 @@
 body = ""
 gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1636411281/melanie-tran/merch8.png"]
 meta_description = ""
-title = "All the Smoke Hoodie"
+title = "All the Smoke Hoodie LA"
 title_tag = ""
 
 +++

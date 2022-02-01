@@ -41,6 +41,7 @@ body {
 body a:hover:not(.uk-button) {
     color: #bf0038!important;
     transition: .2s;
+    text-decoration: none;
 }
 
 body a {

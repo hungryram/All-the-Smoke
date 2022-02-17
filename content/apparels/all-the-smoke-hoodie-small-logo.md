@@ -1,5 +1,6 @@
 +++
 body = ""
+price = "$40.00"
 gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1636411281/melanie-tran/merch7.png"]
 meta_description = ""
 title = "All the Smoke Hoodie"

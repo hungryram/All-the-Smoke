@@ -1,4 +1,5 @@
 +++
+price = "$40.00"
 body = ""
 gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1636411280/melanie-tran/merch333.png", "https://res.cloudinary.com/hungryram19/image/upload/v1636411281/melanie-tran/merch33.png", "https://res.cloudinary.com/hungryram19/image/upload/v1636411280/melanie-tran/merch3.png"]
 meta_description = ""

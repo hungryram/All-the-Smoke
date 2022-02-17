@@ -1,4 +1,5 @@
 +++
+price = "$20.00"
 body = ""
 gallery = ["https://res.cloudinary.com/hungryram19/image/upload/v1641695604/melanie-tran/all-the-smoke-black-shirt_kvnxtq.png", "https://res.cloudinary.com/hungryram19/image/upload/v1641695604/melanie-tran/all-the-smoke-black-shirt-backside_nntlds.png"]
 meta_description = ""

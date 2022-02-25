@@ -160,6 +160,10 @@ textarea.uk-textarea::placeholder {
     color: #fff!important;
 }
 
+.apparel-home svg {
+  color: #000;
+}
+
 button.uk-button-primary,
 a.uk-button-primary {
     background: white;

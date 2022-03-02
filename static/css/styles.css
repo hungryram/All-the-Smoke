@@ -520,6 +520,12 @@ footer.footer svg:hover {
     position: relative;
   }
 
+@media screen and (max-width: 800px) {
+    .glitch {
+      width: 20rem;
+    }
+}
+
   .glitch::after {
     content: attr(data-glitch);
     position: absolute;

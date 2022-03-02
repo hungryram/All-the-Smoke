@@ -11,7 +11,7 @@
                     <li>
                         <a href="{{ .Permalink }}" class="uk-link-reset uk-text-center">
                             <div class="uk-panel bg uk-padding">
-                                <img src="{{ index .Params.gallery 0 }}" alt="" style="box-shadow:2px 9px 10px 12px #000">
+                                <img src="{{ index .Params.gallery 0 }}" alt="{{ .Title }}">
                                 <h2 class="uk-h4">{{ .Title }}</h2>
                             </div>
                         </a>

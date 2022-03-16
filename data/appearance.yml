@@ -6,9 +6,9 @@ header:
   enable_white_text: false
   enable_white_text_top: false
 branding:
-  site_title: RN Insurance
-  logo: https://res.cloudinary.com/hungryram19/image/upload/v1634317410/melanie-tran/all-the-smoke-logo.png
-  dark_logo: https://res.cloudinary.com/hungryram19/image/upload/v1634317410/melanie-tran/all-the-smoke-logo.png
+  site_title: All the Smoke
+  logo: https://res.cloudinary.com/hungryram19/image/upload/v1647389887/melanie-tran/allthesmoke-logo.png
+  dark_logo: https://res.cloudinary.com/hungryram19/image/upload/v1647389887/melanie-tran/allthesmoke-logo.png
   favicon: 
   logo_width: 
 colors:
@@ -22,9 +22,6 @@ footer:
   footer_background_color: ''
   background_image: ''
   enable_black_text: false
-  footer_bio: RN Insurance is a local insurance agency located in Lowell, MA. We are
-    committed to providing clients in MA and NH with the highest quality insurance
-    plans.
   disclaimer: ''
   equal_housing_logo: false
   mls_logo: false

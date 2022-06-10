@@ -1,4 +1,4 @@
-baseURL = "https://allthesmoke.netlify.app/"
+baseURL = "https://www.allthesmokeofficial.com/"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = "true"
 languageCode = "en-us"
